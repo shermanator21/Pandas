@@ -38,3 +38,19 @@ print(grades.dtype)
 
 print(grades.values)
 # [87 100 94]
+
+# Series of Strings
+hardware = pd.Series(['Hammer', 'Saw', 'Wrench'])
+
+'''0 Hammer
+    1 Saw
+    2 Wrench
+    dtype: object'''
+
+answer = hardware.str.contains('a')
+
+print(answer)
+
+hardware_upper = hardware.str.upper()
+
+print(hardware_upper)
